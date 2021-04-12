@@ -1,0 +1,14 @@
+<h1>Com form group</h1>
+
+<form [formGroup]="form1">
+  <input formControlName="campoNumerico1" type="text" onlyNumber />
+  <p>model value: {{form1.get('campoNumerico1').value}}</p>
+  <p>form dirty: {{form1.dirty}}</p>
+</form>
+
+<form [formGroup]="form2">
+  <input formControlName="campoNumerico2" type="text" onlyNumber />
+  <p>model value: {{form2.get('campoNumerico2').value}}</p>
+  <p>form dirty: {{form2.dirty}}</p>
+  <p>form valido: {{form2.valid}}</p>
+</form>
